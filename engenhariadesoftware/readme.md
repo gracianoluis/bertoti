@@ -24,6 +24,12 @@ Como funciona: Se uma pessoa decide fazer horas extras ou pegar um segundo empre
 
 6 - Escalabilidade é a capacidade do sistema de continuar funcionando bem enquanto o número de usuários ou requisições cresce, Disponibilidade define quanto tempo o sistema fica "no ar". É medido pelos "noves", segurabilidade o nível de proteção que o sistema tem contra ataques para manter os dados seguros, testabilidade o quão fácil e rápido é criar testes para garantir que o código realmente faz o que deveria fazer, e manutenibilidade/Agilidade a facilidade de fazer mudanças, corrigir bugs ou adicionar novas funções sem quebrar o que já existe.
 
-7 - Segurança vs. Usabilidade: Se você colocar 10 etapas de autenticação (biometria, token, senha forte), o sistema fica super seguro, mas o usuário vai odiar porque é difícil de acessar. O trade-off aqui é: quanto mais segurança, geralmente menos conveniência para o usuário.
+7 - Segurança vs. Usabilidade: Se você colocar 10 etapas de autenticação (biometria, token, senha forte), o sistema fica super seguro, mas o usuário vai odiarporque é difícil de acessar. O trade-off aqui é: quanto mais segurança, geralmente menos conveniência para o usuário.
   Tempo de Desenvolvimento (Time-to-market) vs. Qualidade de Código: Às vezes uma empresa precisa lançar um produto rápido para ganhar o mercado (prazo curto). O trade-off é que, para entregar rápido, os desenvolvedores podem acumular "dívida técnica", escrevendo um código menos elegante que será mais difícil de manter depois.
   Consumo de Memória vs. Velocidade de Processamento: Você pode criar um algoritmo que "decora" (faz cache) de todos os resultados para ser instantâneo na próxima vez que alguém perguntar. O benefício é a velocidade, mas o trade-off é que seu programa vai gastar muito mais memória do computador para guardar essas informações.
+
+  8 -Não, o teste exaustivo (testar todas as possibilidades) é considerado inviável na Engenharia de Software. Mesmo em um exemplo pequeno com cerca de 65.536 combinações, em sistemas reais, as combinações são infinitas, por isso a engenharia foca em processos e ferramentas que garantam a sustentabilidade e a confiabilidade do código ao longo do tempo, em vez de tentar cobrir 100% das possibilidades. 
+
+7- A grande maioria das entradas (números) mostraria o erro, pois a lógica de subtrair 1 (j - 1) em vez de somar (j + 1) altera o valor base da operação na maioria dos casos. No entanto, por conta do trade-off entre precisão e tipos de dados, o erro é mascarado em valores específicos.
+
+9 -O erro é "escondido" em entradas próximas de zero devido à divisão por 30.000. Como estamos usando números inteiros, o resultado é truncado (os zeros após a vírgula são anulados).
