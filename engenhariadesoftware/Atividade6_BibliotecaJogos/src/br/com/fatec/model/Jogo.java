@@ -11,15 +11,9 @@ public class Jogo {
         this.preco = preco;
     }
 
-    public String getTitulo() {
-        return titulo;
+    // Método de Baixo Acoplamento
+    public boolean temOGenero(String busca) {
+        return this.genero.equalsIgnoreCase(busca);
     }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
+    public String getTitulo() { return titulo; }
 }
